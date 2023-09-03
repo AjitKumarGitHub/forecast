@@ -52,6 +52,7 @@ function WeatherBox(){
       ).getMinutes()}`;
     };
 // this is comment
+// this is my app
     return(
         <div className="w-full h-auto">
            <div className=" justify-center  gap-3  p-auto bg-slate-700  h-auto mb-10 md:h-screen "> 
