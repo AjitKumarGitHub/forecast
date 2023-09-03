@@ -51,7 +51,7 @@ function WeatherBox(){
         timeStamp * 1000
       ).getMinutes()}`;
     };
-
+// this is comment
     return(
         <div className="w-full h-auto">
            <div className=" justify-center  gap-3  p-auto bg-slate-700  h-auto mb-10 md:h-screen "> 
