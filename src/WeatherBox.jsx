@@ -86,7 +86,7 @@ function WeatherBox(){
          </div>
          {dataWeather && (
           <div className=" grid grid-cols-1 md:flex md:flex-row    justify-between mt-6">
-          <div> <img
+          <div className="justify-center justify-items-center"> <img
          src={`https://openweathermap.org/img/wn/${dataWeather.weather[0].icon}@2x.png`}
             width={250}
             alt="icon"
