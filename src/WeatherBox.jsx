@@ -85,18 +85,19 @@ function WeatherBox(){
 
          </div>
          {dataWeather && (
-          <div className=" grid grid-cols-1 md:flex md:flex-row    justify-between mt-6">
+          <div className=" grid grid-cols-1 md:flex md:flex-row  justify-center justify-items-center md:justify-between mt-6">
           <div className="text-center md:text-left"> <img
          src={`https://openweathermap.org/img/wn/${dataWeather.weather[0].icon}@2x.png`}
             width={250}
             alt="icon"
           /></div>
           <div className="text-7xl text-white font-bold text-center ">{Math.round(myData.temp-273)}&deg;C
-          <div>{dataWeather.description}</div></div>
+          <div>{dataWeather.weather[0].description}</div></div>
           <div className="text-2xl text-gray-600 font-medium flex flex-col md:flex-col text-center">
             <h3> Wind: {windData}&nbsp;mph</h3>
             <h3>min-temp: {myData.temp_min}</h3>
             <h3>max-temp: {myData.temp_max}</h3>
+            <h3>feels_like: {myData.feels_like}</h3>
           </div>
         </div>
          )}
