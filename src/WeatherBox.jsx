@@ -3,6 +3,7 @@ import { useState, useRef,useEffect } from "react";
 import linkIcon from './assesta/external-link.svg'
 import Icon from './assesta/search_svg.svg';
 import WeatherData from "./WeatherData";
+import Header from "./Header";
 function WeatherBox(){
     const API_key=`0e918296f1141628633ecaa2b634a499`;
     const [cityName,setCityName]=useState("Patna");
@@ -55,6 +56,7 @@ function WeatherBox(){
 // this is my app
     return(
         <div className="w-full h-auto">
+           
            <div className=" justify-center  gap-3  p-auto bg-slate-700  h-auto mb-10 md:h-screen "> 
            <div className="bg-red-200  w-full m-auto  justify-center h-full ">
            <div className="flex flex-row"> 
@@ -164,7 +166,7 @@ function WeatherBox(){
          </div>
 
          <div className="m-3 text-2xl font-semibold flex flex-col justify-center justify-items-center text-center  bg-red-300 text-center">
-          <div>All rights reseved <span className="text-3xl">|</span> Copyright @2023</div>
+          <div>All rights reseved By AJIT KUMAR <span className="text-3xl">|</span> Copyright @2023</div>
           <div>Made using OpenWeather API</div>
          </div>
           
